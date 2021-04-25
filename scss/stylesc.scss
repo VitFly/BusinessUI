@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    font-family: 'Montserrat', sans-serif;
+    // font-family: 'PT Serif', serif;
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+    .wrapper{
+    max-width: 87em;
+    margin: 0px auto;  
+
+    .header {   
+    height: 100px;
+    min-height: 100px;
+    max-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 100%;
+    &__menu{
+        color: #646667;
+        font-family: "Montserrat - Bold";
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height: 40px;
+        text-transform: uppercase;
+        padding-left: 23.3em;
+    }
+    a{
+        text-decoration: none;
+        color: #646667;
+    }
+    span{
+        position: relative;
+        top:  3px;
+        padding-left: 9px        
+    };
+    &__menu__link{
+        padding: 0 1em;
+      }
+  }
+
+    .main {
+
+        &__item{
+            position: relative;
+            height: 411px;            
+            &__photo{
+                // position: absolute;
+                // width: 100%;
+                // height: 100%;
+                // top: 0;
+                // left: 0;
+                &::after{
+                    overflow: hidden;
+                    transform: rotate(22deg);
+                    content: '';
+                    position: absolute;
+                    width: 412px;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    background-image: linear-gradient(198deg, #007397 0%, rgba(0, 115, 151, 0) 100%);
+                    -webkit-transform: rotate(22deg);
+                    -moz-transform: rotate(22deg);
+                    -ms-transform: rotate(22deg);
+                    -o-transform: rotate(22deg);
+            }
+            }
+            &__text{
+                position: absolute;
+                bottom: 80px;
+                left: 400px;
+                width: 770px;
+                height: 85px;
+                text-shadow: 0 3px 1px rgba(0, 0, 0, 0.6);
+                color: #ffffff;
+                font-family: "PT Serif - Bold";
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 48px;
+                text-transform: uppercase;
+              
+            }
+        }
+    }
+}
+
