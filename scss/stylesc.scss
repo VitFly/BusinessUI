@@ -274,26 +274,86 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
     .section__card {
         margin-top: 48px;
-        &card__item {
-
-        }
-        &__image{
-
-            &__title {
-
-            }
-            &__subtitle{
-
-            }
-        }
-        .__text{
-
-        }
-        .text__undtext {
-        }
     }
-    
-    
-
+    .card__item {  
+        width: 370px;  
+    }
+    .card__item__image {
+        position: relative;
+            height: 370px;  
+    }
+    .card__item__image__img {
+                overflow: hidden;
+                position: absolute;
+                width: 370px;
+                height: 370px;
+                top: 0;
+                left: 0;
+                &::after{
+                    transform: rotate(22.2deg);
+                    content: '';
+                    position: absolute;
+                    width: 412px;
+                    height: 138%;
+                    left: 0;
+                    top: 0;
+                    background-image: linear-gradient(198deg, #007397 0%, rgba(0, 115, 151, 0) 100%);
+                    -webkit-transform: rotate(22.2deg);
+                    -moz-transform: rotate(22.2deg);
+                    -ms-transform: rotate(22.2deg);
+                    -o-transform: rotate(22.2deg);
+                    left: -120px;
+                    top: -110px;
 }
-
+                
+    }
+    .card__item__title {
+                position: absolute;
+                bottom: 320px;
+                left: 50px;
+                color: #ffffff;
+                font-family: "Montserrat";
+                font-size: 12px;
+                font-weight: 700;
+                font-style: normal;
+                letter-spacing: 0.75px;
+                line-height: 16px;
+                text-align: left;
+                text-transform: uppercase;
+                z-index: 1;
+    }
+    .card__item__subtitle {
+                position: absolute;
+                bottom: 72px;
+                width: 310px;
+                left: 50px;
+                color: #ffffff;
+                font-family: "Montserrat";
+                font-size: 24px;
+                font-weight: 700;
+                font-style: normal;
+                letter-spacing: 1px;
+                line-height: 32px;
+                text-transform: uppercase;
+                z-index: 1;
+    }
+    .card__item__text {
+        padding-top: 32px;
+        color: #646667;
+        font-family: "Montserrat";
+        font-size: 16px;
+        line-height: 32px;
+        text-align: left;
+    }
+    .card__item__text__undtext {
+        padding-top: 38px;
+        color: #007397;
+        font-family: "Montserrat";
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height: 16px;
+        text-align: left;
+        text-transform: uppercase;
+    }
+}
