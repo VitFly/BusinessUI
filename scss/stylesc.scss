@@ -75,6 +75,14 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     };
     &__menu__link{
         padding: 0 1em;
+        &:hover{
+            color: #267995;
+            transition: .4s;
+            -webkit-transition: .4s;
+            -moz-transition: .4s;
+            -ms-transition: .4s;
+            -o-transition: .4s;
+}
       }
   }
 
@@ -273,7 +281,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     }
 
     .section__card {
+        display: flex;
         margin-top: 48px;
+        justify-content: space-between;
     }
     .card__item {  
         width: 370px;  
@@ -309,7 +319,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     }
     .card__item__title {
                 position: absolute;
-                bottom: 320px;
+                bottom: 310px;
                 left: 50px;
                 color: #ffffff;
                 font-family: "Montserrat";
@@ -356,4 +366,56 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
         text-align: left;
         text-transform: uppercase;
     }
+
+    .footer {
+        margin-top: 44px;
+    }
+    .footer__text {
+        flex-wrap: nowrap;
+        height: 40px;
+        max-height: 40px;
+        display: flex;
+        color: #646667;
+        font-family: "Montserrat";
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height: 40px;
+        text-transform: uppercase;
+        
+    }
+    .footer__text__bus2017 {
+        flex-basis: 73%;
+        &:hover{
+            color: #267995;
+            transition: .4s;
+            -webkit-transition: .4s;
+            -moz-transition: .4s;
+            -ms-transition: .4s;
+            -o-transition: .4s;
+}
+    }
+    .footer__text__terms {
+        padding-right: 4.1em;
+        &:hover{
+            color: #267995;
+            transition: .4s;
+            -webkit-transition: .4s;
+            -moz-transition: .4s;
+            -ms-transition: .4s;
+            -o-transition: .4s;
+}
+    }
+    .footer__text__policy {
+        &:hover{
+            color: #267995;
+            transition: .4s;
+            -webkit-transition: .4s;
+            -moz-transition: .4s;
+            -ms-transition: .4s;
+            -o-transition: .4s;
+}
+    }
+   
+    
 }
